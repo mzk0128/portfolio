@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "yuri katho portfolio # つくるぞ 今月中に完成を目指す",
+  "main": "index.js",
+  "scripts": {
+      "compile:sass":"node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mzk0128/portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mzk0128/portfolio/issues"
+  },
+  "homepage": "https://github.com/mzk0128/portfolio#readme",
+  "dependencies": {
+    "node-sass": "^4.11.0"
+  }
+}
