@@ -1,4 +1,159 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Cormorant+Garamond:600");
+@import url("https://fonts.googleapis.com/css?family=Hammersmith+One");
+@import url("https://fonts.googleapis.com/css?family=Cormorant+Garamond:600");
+@import url("https://fonts.googleapis.com/css?family=Hammersmith+One");
+#portfolio-container {
+  padding: 3vmin 0;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap; }
+  #portfolio-container .portfolio-item-mask {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.3s; }
+    #portfolio-container .portfolio-item-mask h2, #portfolio-container .portfolio-item-mask span {
+      opacity: 0; }
+  #portfolio-container a:hover .portfolio-item-mask {
+    background: rgba(0, 0, 0, 0.8); }
+    #portfolio-container a:hover .portfolio-item-mask h2, #portfolio-container a:hover .portfolio-item-mask span {
+      opacity: 1;
+      transition: 0.3s; }
+  #portfolio-container section.portfolio-item {
+    width: calc(1020px /3);
+    height: calc(1020px /3);
+    background-color: #ccc;
+    background-size: cover;
+    margin-right: 10px;
+    margin-bottom: 10px; }
+    #portfolio-container section.portfolio-item:nth-child(3n) {
+      margin: 0; }
+    #portfolio-container section.portfolio-item h2, #portfolio-container section.portfolio-item span {
+      width: 280px;
+      color: #ffffff;
+      padding: 3px;
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300;
+      text-align: center; }
+    #portfolio-container section.portfolio-item span {
+      font-size: 1.5rem; }
+
+#profile-container {
+  padding: 3vmin 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; }
+  #profile-container #profile-image {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    margin-right: 10px; }
+  #profile-container #profile-text-box {
+    font-size: 0.9rem; }
+    #profile-container #profile-text-box h3#profile-name {
+      letter-spacing: 0.1rem;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 5px 0; }
+      #profile-container #profile-text-box h3#profile-name span {
+        font-size: 0.8rem;
+        color: #cccccc;
+        font-family: 'Hammersmith One', sans-serif;
+        padding-left: 10px; }
+
 * {
   padding: 0;
   margin: 0;
   list-style: none; }
+
+body {
+  font-size: 16px;
+  font-family: YuGothic,'Yu Gothic','ヒラギノ角ゴシック','Hiragino Sans',sans-serif;
+  background-color: #ffffff;
+  color: #333333; }
+
+a {
+  text-decoration: none; }
+
+#header-wrap, #portfolio-container, #footer-wrap {
+  width: 1040px;
+  margin: 0 auto; }
+
+h1#main-title {
+  width: 1040px;
+  font-size: 2rem;
+  font-family: 'Cormorant Garamond', serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0.2rem;
+  margin-top: 5vmin; }
+  h1#main-title::before, h1#main-title::after {
+    content: "";
+    display: block;
+    border-top: 1px solid #333333;
+    flex-grow: 1; }
+  h1#main-title::before {
+    margin-right: 10px; }
+  h1#main-title::after {
+    margin-left: 10px; }
+
+#sns-link-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: -10px; }
+  #sns-link-container .sns-link-button {
+    border: 0;
+    background-color: #333333;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
+address.profile-address {
+  font-style: normal;
+  font-family: 'Hammersmith One', sans-serif;
+  padding: 5px 0; }
+
+#footer-wrap {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; }
+  #footer-wrap #profile-skill {
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 30px; }
+    #footer-wrap #profile-skill .profile-skill-tag {
+      font-family: 'Hammersmith One', sans-serif;
+      display: inline-block;
+      padding: 3px 7px;
+      background-color: #333333;
+      color: #ffffff;
+      margin: 3px; }
+
+small {
+  width: 1040px;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  font-family: 'Hammersmith One', sans-serif; }
+
+#product-container {
+  width: 1040px;
+  margin: 3vmin auto; }
+  #product-container .product-image {
+    width: 1000px;
+    height: auto;
+    display: block;
+    margin: 0 auto; }

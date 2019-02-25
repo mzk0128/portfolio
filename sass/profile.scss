@@ -1,0 +1,36 @@
+@import "colors.scss";
+@import url('https://fonts.googleapis.com/css?family=Hammersmith+One');
+
+#profile-container {
+    padding: 3vmin 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    #profile-image {
+        width: 110px;
+        height: 110px;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+
+    #profile-text-box {
+        font-size: 0.9rem;
+
+        h3#profile-name {
+            letter-spacing: 0.1rem;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 5px 0;
+
+            span {
+                font-size: 0.8rem;
+                color: $sub-text-color;
+                font-family: 'Hammersmith One', sans-serif;
+                padding-left: 10px;
+            }
+        }
+
+    }
+}

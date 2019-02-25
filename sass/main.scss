@@ -1,5 +1,122 @@
+@import "colors.scss";
+@import "portfolio.scss";
+@import "profile.scss";
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond:600');
+@import url('https://fonts.googleapis.com/css?family=Hammersmith+One');
+
+// base
 * {
     padding: 0;
     margin: 0;
     list-style: none;
+}
+
+body {
+    font-size: 16px;
+    font-family: YuGothic,'Yu Gothic','ヒラギノ角ゴシック','Hiragino Sans',sans-serif;
+    background-color: $main-color-white;
+    color: $text-color-black;
+}
+
+// link
+a {
+    text-decoration: none;
+}
+
+// header
+#header-wrap, #portfolio-container, #footer-wrap {
+    width: 1040px;
+    margin: 0 auto;
+}
+
+h1#main-title {
+    width: 1040px;
+    font-size: 2rem;
+    font-family: 'Cormorant Garamond', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.2rem;
+    margin-top: 5vmin;
+
+    &::before, &::after {
+        content: "";
+        display: block;
+        border-top: 1px solid $text-color-black;
+        flex-grow: 1;
+    }
+    &::before {
+        margin-right: 10px;
+    }
+    &::after {
+        margin-left: 10px;
+    }
+}
+
+#sns-link-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: -10px;
+
+    .sns-link-button {
+        border: 0;
+        background-color: $text-color-black;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        margin-left: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+address.profile-address {
+    font-style: normal;
+    font-family: 'Hammersmith One', sans-serif;
+    padding: 5px 0;
+}
+
+#footer-wrap {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    #profile-skill {
+        width: 300px;
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 30px;
+
+        .profile-skill-tag {
+            font-family: 'Hammersmith One', sans-serif;
+            display: inline-block;
+            padding: 3px 7px;
+            background-color: $text-color-black;
+            color: $main-color-white;
+            margin: 3px;
+        }
+    }
+}
+
+small {
+    width: 1040px;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    font-family: 'Hammersmith One', sans-serif;
+}
+
+#product-container {
+    width: 1040px;
+    margin: 3vmin auto;
+
+    .product-image {
+        width: 1000px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
 }
