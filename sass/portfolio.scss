@@ -16,13 +16,17 @@
         align-items: center;
         flex-direction: column;
         transition: 0.3s;
+        cursor: pointer;
         
         h2, span {
             opacity: 0;
         }
     }
+
     a:hover .portfolio-item-mask {
+        border-radius: 3px;
         background: rgba(0, 0, 0, 0.8);
+
         h2, span {
             opacity: 1;
             transition: 0.3s;
@@ -36,6 +40,7 @@
         background-size: cover;
         margin-right: 10px;
         margin-bottom: 10px;
+        border-radius: 3px;
 
         &:nth-child(3n) {
             margin: 0;

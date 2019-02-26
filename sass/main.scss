@@ -19,7 +19,8 @@ body {
 }
 
 // link
-a {
+a, a:link, a:active, a:visited {
+    color: $text-color-black;
     text-decoration: none;
 }
 
@@ -60,7 +61,7 @@ h1#main-title {
     align-items: center;
     margin-top: -10px;
 
-    .sns-link-button {
+    .sns-link-button-twitter {
         border: 0;
         background-color: $text-color-black;
         border-radius: 50%;
@@ -70,6 +71,34 @@ h1#main-title {
         display: flex;
         justify-content: center;
         align-items: center;
+        font-size: 19px;
+        padding-top: 2px;
+        a {
+            color: #fff;
+            display: block;
+        }
+        &:hover {
+            background: #c2e59c;
+            transition: 0.3s;
+        }
+    }
+    .sns-link-button-github {
+        border: 0;
+        border-radius: 50%;
+        margin-left: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $text-color-black;
+        font-size: 30px;
+        a {
+            color: $text-color-black;
+            display: block;
+        }
+        a:hover {
+            color: #c2e59c;
+            transition: 0.3s;
+        }
     }
 }
 
@@ -103,7 +132,7 @@ address.profile-address {
 
 small {
     width: 1040px;
-    margin: 0 auto;
+    margin: 0 auto 5vmin;
     text-align: center;
     display: block;
     font-family: 'Hammersmith One', sans-serif;
@@ -113,10 +142,31 @@ small {
     width: 1040px;
     margin: 3vmin auto;
 
+    .image-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
     .product-image {
-        width: 1000px;
+        width: 800px;
         height: auto;
         display: block;
-        margin: 0 auto;
+        margin: 10px;
+    }
+    .product-image-small {
+        width: 320px;
+        height: auto;
+        display: block;
+        margin: 10px;
+    }
+    .product-comment {
+        margin-top: 5vmin;
+    }
+    .product-category {
+        margin: 15px 0;
+        font-size: 13px;
+        font-weight: 700;
+        display: block;
     }
 }

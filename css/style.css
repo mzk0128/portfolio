@@ -15,10 +15,12 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    transition: 0.3s; }
+    transition: 0.3s;
+    cursor: pointer; }
     #portfolio-container .portfolio-item-mask h2, #portfolio-container .portfolio-item-mask span {
       opacity: 0; }
   #portfolio-container a:hover .portfolio-item-mask {
+    border-radius: 3px;
     background: rgba(0, 0, 0, 0.8); }
     #portfolio-container a:hover .portfolio-item-mask h2, #portfolio-container a:hover .portfolio-item-mask span {
       opacity: 1;
@@ -29,7 +31,8 @@
     background-color: #ccc;
     background-size: cover;
     margin-right: 10px;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    border-radius: 3px; }
     #portfolio-container section.portfolio-item:nth-child(3n) {
       margin: 0; }
     #portfolio-container section.portfolio-item h2, #portfolio-container section.portfolio-item span {
@@ -77,7 +80,8 @@ body {
   background-color: #ffffff;
   color: #333333; }
 
-a {
+a, a:link, a:active, a:visited {
+  color: #333333;
   text-decoration: none; }
 
 #header-wrap, #portfolio-container, #footer-wrap {
@@ -109,7 +113,7 @@ h1#main-title {
   justify-content: flex-end;
   align-items: center;
   margin-top: -10px; }
-  #sns-link-container .sns-link-button {
+  #sns-link-container .sns-link-button-twitter {
     border: 0;
     background-color: #333333;
     border-radius: 50%;
@@ -118,7 +122,30 @@ h1#main-title {
     margin-left: 5px;
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    font-size: 19px;
+    padding-top: 2px; }
+    #sns-link-container .sns-link-button-twitter a {
+      color: #fff;
+      display: block; }
+    #sns-link-container .sns-link-button-twitter:hover {
+      background: #c2e59c;
+      transition: 0.3s; }
+  #sns-link-container .sns-link-button-github {
+    border: 0;
+    border-radius: 50%;
+    margin-left: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333333;
+    font-size: 30px; }
+    #sns-link-container .sns-link-button-github a {
+      color: #333333;
+      display: block; }
+    #sns-link-container .sns-link-button-github a:hover {
+      color: #c2e59c;
+      transition: 0.3s; }
 
 address.profile-address {
   font-style: normal;
@@ -144,7 +171,7 @@ address.profile-address {
 
 small {
   width: 1040px;
-  margin: 0 auto;
+  margin: 0 auto 5vmin;
   text-align: center;
   display: block;
   font-family: 'Hammersmith One', sans-serif; }
@@ -152,8 +179,25 @@ small {
 #product-container {
   width: 1040px;
   margin: 3vmin auto; }
+  #product-container .image-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; }
   #product-container .product-image {
-    width: 1000px;
+    width: 800px;
     height: auto;
     display: block;
-    margin: 0 auto; }
+    margin: 10px; }
+  #product-container .product-image-small {
+    width: 320px;
+    height: auto;
+    display: block;
+    margin: 10px; }
+  #product-container .product-comment {
+    margin-top: 5vmin; }
+  #product-container .product-category {
+    margin: 15px 0;
+    font-size: 13px;
+    font-weight: 700;
+    display: block; }
