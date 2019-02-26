@@ -148,11 +148,21 @@ small {
         justify-content: center;
         align-items: flex-start;
     }
+
+    .image-container-column {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
     .product-image {
         width: 800px;
         height: auto;
         display: block;
         margin: 10px;
+    }
+    .center {
+        margin: 10px auto;
     }
     .product-image-small {
         width: 320px;
