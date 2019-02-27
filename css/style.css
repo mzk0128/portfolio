@@ -44,6 +44,9 @@
       text-align: center; }
     #portfolio-container section.portfolio-item span {
       font-size: 1.5rem; }
+    #portfolio-container section.portfolio-item .category-text {
+      font-size: 1rem;
+      font-family: YuGothic,'Yu Gothic','ヒラギノ角ゴシック','Hiragino Sans',sans-serif; }
 
 #profile-container {
   padding: 3vmin 0;
