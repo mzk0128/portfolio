@@ -1,0 +1,149 @@
+@import "colors.scss";
+@media screen and (max-width:480px) { 
+    // header
+    #header-wrap, #portfolio-container, #footer-wrap {
+        width: 100vw;
+        margin: 0 auto;
+    }
+
+    h1#main-title {
+        width: 100vw;
+        font-size: 2rem;
+        font-family: 'Cormorant Garamond', serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        letter-spacing: 0.2rem;
+        margin: 5vmin auto 0;
+
+        &::before, &::after {
+            content: "";
+            display: block;
+            border-top: 1px solid $text-color-black;
+            flex-grow: 1;
+        }
+        &::before {
+            margin-right: 10px;
+        }
+        &::after {
+            margin-left: 10px;
+        }
+    }
+
+    #sns-link-container {
+        width: 100vw;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-top: -10px;
+        padding-right: 10px;
+    }
+    
+    #portfolio-container {
+        padding: 3vmin 0;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        section.portfolio-item {
+            width: 95vw;
+            height: 30vh;
+            background-color: #ccc;
+            background-size: cover;
+            border-radius: 3px;
+            background-position: center;
+            margin: 0 auto 10px;
+            &:nth-child(3n) {
+                margin: 0 auto 10px;
+            }
+        }
+    }
+    
+    #footer-wrap {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        #profile-container {
+            width: 85vw;
+        }
+        #profile-skill {
+            width: 85vw;
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 0 3vh;
+
+            .profile-skill-tag {
+                font-family: 'Hammersmith One', sans-serif;
+                display: inline-block;
+                padding: 3px 7px;
+                background-color: $text-color-black;
+                color: $main-color-white;
+                margin: 3px;
+                font-size: 1rem;
+            }
+        }
+    }
+
+    small {
+        width: 100vw;
+        margin: 0 auto 5vmin;
+        text-align: center;
+        display: block;
+        font-family: 'Hammersmith One', sans-serif;
+    }
+
+    // product 
+    #product-container {
+        width: 95vw;
+        margin: 3vmin auto;
+
+        .mobile img {
+            display: block;
+        }
+        .desktop img {
+            display: none;
+        }
+        .image-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+        }
+
+        .image-container-column {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .product-image {
+            width: 95%;
+            height: auto;
+            display: block;
+            margin: 10px;
+        }
+        .center {
+            margin: 10px auto;
+        }
+        .product-image-small {
+            width: 95%;
+            height: auto;
+            display: block;
+            margin: 10px;
+        }
+        .product-comment {
+            width: 90vw;
+            margin: 10vmin auto 0;
+        }
+        .product-category {
+            margin: 15px 0;
+            font-size: 13px;
+            font-weight: 700;
+            display: block;
+        }
+    }
+}
