@@ -20,6 +20,11 @@ a, a:link, a:active, a:visited {
     text-decoration: none;
 }
 
+a:hover {
+    color: #c2e59c;
+    transition: 0.3s;
+}
+
 // header
 #header-wrap, #portfolio-container, #footer-wrap {
     width: 1040px;

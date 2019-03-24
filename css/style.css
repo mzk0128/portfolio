@@ -17,7 +17,14 @@ body {
 
 a, a:link, a:active, a:visited {
   color: #333333;
-  text-decoration: none; }
+  text-decoration: none;
+  font-weight: 700;
+ }
+
+  a:hover {
+    color: #c2e59c;
+    transition: 0.3s;
+}
 
 #header-wrap, #portfolio-container, #footer-wrap {
   width: 1040px;
@@ -316,7 +323,8 @@ small {
       width: 95%;
       height: auto;
       display: block;
-      margin: 10px; }
+      margin: 10px;
+    }
     #product-container .center {
       margin: 10px auto; }
     #product-container .product-image-small {
